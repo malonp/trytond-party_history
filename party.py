@@ -26,8 +26,7 @@ from trytond.pool import PoolMeta
 __all__ = ['Party', 'PartyIdentifier']
 
 
-class Party:
-    __metaclass__ = PoolMeta
+class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
     @classmethod
@@ -36,8 +35,7 @@ class Party:
         cls._history = True
 
 
-class PartyIdentifier:
-    __metaclass__ = PoolMeta
+class PartyIdentifier(metaclass=PoolMeta):
     __name__ = 'party.identifier'
 
     @classmethod
