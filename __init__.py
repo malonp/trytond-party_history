@@ -27,9 +27,4 @@ from .party import *
 
 
 def register():
-    Pool.register(
-        Address,
-        ContactMechanism,
-        Party,
-        PartyIdentifier,
-        module='party_history', type_='model')
+    Pool.register(Address, ContactMechanism, Party, PartyIdentifier, module='party_history', type_='model')
