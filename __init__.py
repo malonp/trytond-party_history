@@ -21,6 +21,7 @@
 
 
 from trytond.pool import Pool
+
 from .address import *
 from .contact_mechanism import *
 from .party import *
